@@ -283,3 +283,62 @@ hr{
 }
 /* Secure Section End */
 
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Section Start */
+#footer{
+    background:#0D1B2A ;
+    padding: 40px 0;
+}
+
+.footer_top{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    align-items: center;
+}
+
+.footer_icons a{
+    color: #FFFFFF;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.footer_line{
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+.footer_bottom{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:'Inter  ' ,serif;
+}
+
+.copyright h3{
+    color: #FFFFFF;
+    opacity: 0.4;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.legal a{
+    color: #FFFFFF;
+    opacity: 0.4;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 15px;
+}
+/* Footer Section End */
+
