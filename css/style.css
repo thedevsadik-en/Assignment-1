@@ -418,15 +418,11 @@ hr{
         grid-template-columns: 1fr;
     }
 }
-
-
-
-/* Shedule section end  */
-
+/* Schedule Section Start */
 #Schedule {
-    background-color: #FFF1F2;
+    background-color: #FFFFFF;
     padding: 100px 0;
-    color: #FFFFFF;
+    color: #0D1B2A;
 }
 @media (max-width: 1400px) {
     #Schedule .container {
@@ -442,14 +438,14 @@ hr{
     font-size: 48px;
     font-weight: 600;
     line-height: 60px;
-    color: #FFFFFF;
+    color: #0D1B2A;
     margin-bottom: 12px;
 }
 .schedule_header p {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    color: #94A3B8;
+    color: #575757;
 }
 .schedule_tabs {
     font-family: 'Inter', sans-serif;
@@ -464,8 +460,8 @@ hr{
     margin-bottom: 50px;
 }
 .tab_btn {
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
     border-radius: 12px;
     padding: 16px 28px;
     cursor: pointer;
@@ -476,14 +472,14 @@ hr{
     min-width: 240px;
 }
 .tab_btn:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: #F1F5F9;
     border-color: #2563EB;
     transform: translateY(-2px);
 }
 .day_num {
     font-size: 12px;
     font-weight: 600;
-    color: #93C5FD;
+    color: #2563EB;
     text-transform: uppercase;
     margin-bottom: 6px;
     letter-spacing: 1px;
@@ -491,7 +487,7 @@ hr{
 .day_theme {
     font-size: 15px;
     font-weight: 500;
-    color: #FFFFFF;
+    color: #0D1B2A;
     text-align: center;
 }
 .tab_content {
@@ -513,12 +509,17 @@ hr{
 #day3:checked ~ .tab_buttons label[for="day3"] {
     background: #2563EB;
     border-color: #2563EB;
-    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.35);
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.2);
 }
 #day1:checked ~ .tab_buttons label[for="day1"] .day_num,
 #day2:checked ~ .tab_buttons label[for="day2"] .day_num,
 #day3:checked ~ .tab_buttons label[for="day3"] .day_num {
     color: #E0F2FE;
+}
+#day1:checked ~ .tab_buttons label[for="day1"] .day_theme,
+#day2:checked ~ .tab_buttons label[for="day2"] .day_theme,
+#day3:checked ~ .tab_buttons label[for="day3"] .day_theme {
+    color: #FFFFFF;
 }
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
@@ -537,7 +538,7 @@ hr{
     top: 10px;
     bottom: 10px;
     width: 2px;
-    background: rgba(255, 255, 255, 0.1);
+    background: #E2E8F0;
 }
 .timeline_item {
     position: relative;
@@ -549,7 +550,7 @@ hr{
 .time {
     font-size: 13px;
     font-weight: 600;
-    color: #93C5FD;
+    color: #2563EB;
     margin-bottom: 8px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -561,12 +562,12 @@ hr{
     width: 38px;
     height: 38px;
     border-radius: 50%;
-    background: #1E293B;
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    background: #FFFFFF;
+    border: 2px solid #E2E8F0;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #93C5FD;
+    color: #2563EB;
     font-size: 15px;
     z-index: 2;
     transition: all 0.3s ease;
@@ -575,12 +576,12 @@ hr{
     background: #2563EB;
     color: #FFFFFF;
     border-color: #2563EB;
-    box-shadow: 0 0 15px rgba(37, 99, 235, 0.5);
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.3);
     transform: scale(1.1);
 }
 .timeline_card {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
     border-radius: 14px;
     padding: 24px 30px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -588,22 +589,23 @@ hr{
 .timeline_card h4 {
     font-size: 19px;
     font-weight: 600;
-    color: #FFFFFF;
+    color: #0D1B2A;
     margin-bottom: 8px;
 }
 .timeline_card p {
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
-    color: #94A3B8;
+    color: #575757;
     margin-bottom: 16px;
 }
 .timeline_card strong {
-    color: #FFFFFF;
+    color: #0D1B2A;
 }
 .timeline_item:hover .timeline_card {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.12);
+    background: #FFFFFF;
+    border-color: transparent;
+    box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.05), 0 8px 8px -5px rgba(0, 0, 0, 0.02);
     transform: translateX(6px);
 }
 .session_tags {
@@ -616,13 +618,13 @@ hr{
     font-weight: 600;
     padding: 4px 10px;
     border-radius: 6px;
-    background: rgba(255, 255, 255, 0.04);
-    color: #94A3B8;
+    background: #E2E8F0;
+    color: #475569;
     text-transform: uppercase;
 }
 .timeline_item:hover .session_tags span {
-    background: rgba(37, 99, 235, 0.15);
-    color: #93C5FD;
+    background: rgba(37, 99, 235, 0.1);
+    color: #2563EB;
 }
 @media (max-width: 768px) {
     .tab_buttons {
@@ -652,6 +654,7 @@ hr{
         top: 18px;
     }
 }
+
 
 /* Shedule section end  */
 /* Ai Creation End  */
