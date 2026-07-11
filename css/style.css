@@ -4,6 +4,282 @@
     box-sizing: border-box;
 }
 
-h1{
-    color: teal;
+ul,ol{
+    list-style-type: none;
 }
+a{
+    text-decoration: none;
+}
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+header {
+    background-color: #FFFFFF;
+}
+.navbar {
+    margin:24px 0 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul li{
+   display: inline-block;
+   padding: 0 20px;
+}
+
+.menu ul li a{
+    color: #575757;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.btn button {
+    background-color: #1D4ED8;
+    padding: 12px 42px;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn button a {
+    
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    
+}
+
+
+/* Hero Section Start  */
+
+#Hero {
+    background: url(../assets/banner.jpg);
+    padding:136px 0 136px 0;
+}
+
+.hero_text{
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.hero_text h1{
+    font-size:80px;
+    line-height: 80px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.hero_text p{
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 400;  
+    padding:0 275px 275px;
+}
+
+
+/* Hero Section End  
+
+/* Meet Section Start  */
+
+#Meet{
+    margin: 80px 0;
+}
+
+.meet_content h1{
+    font-size: 56px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    line-height: 64px;
+    text-align: center;
+}
+
+.speakers_card{ 
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.card {
+
+    border-radius: 12px;
+    box-shadow: -2px 1px 7px -3px rgba(0,0,0,0.75);
+-webkit-box-shadow: -2px 1px 7px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 1px 7px -3px rgba(0,0,0,0.75);
+}
+.card img{
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+.card_text{
+    padding: 24px;
+     font-family: 'Inter', sans-serif;
+}
+
+.card_text h3{
+    font-size: 12px;
+    font-weight: 500;
+   padding-bottom: 8px;
+    line-height: 18px;
+    color: #2563EB;
+    text-transform: Uppercase;
+}
+.card_text h2{
+    font-size: 20px;
+    font-weight: 600;
+   padding-bottom: 8px;
+    line-height: 28px;
+    color: #0D1B2A;
+    text-transform: capitalize;
+}
+
+.card_text p{
+    font-size: 14px;
+    font-weight: 400;
+   padding-bottom: 8px;
+    line-height: 21px;
+    color: #575757;
+     text-transform: capitalize;
+}
+
+
+/* Meet Section End  
+
+/* Secure Section Start */
+
+#secure{
+    margin: 130px 0;
+}
+
+.secure_content{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.secure_content h2{
+    font-size: 48px;
+    font-weight: 600;
+   padding-bottom: 12px;
+    line-height: 60px;
+    color: #0D1B2A;
+    text-transform: capitalize;
+   
+}
+
+.secure_content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #575757;
+     text-transform: capitalize;
+
+}
+
+.pricing-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    margin : 80px 80px 0 80px;
+}
+
+.pcards{
+    padding: 40px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    box-shadow: -2px 1px 7px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: -2px 1px 7px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 1px 7px -2px rgba(0,0,0,0.75);
+}
+
+
+.pcards h3{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #888888;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+}
+.pcards h2{
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 44px;
+    color: #0D1B2A;
+    padding-bottom: 5px;
+    
+}
+
+.pcards p{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #888888;
+    padding-bottom: 28px;
+}
+hr{
+    opacity: 30%;
+}
+
+.pcards ul{
+    padding-top: 33px;
+    list-style:disc;
+    color: #1D4ED8;
+    padding-left: 20px;
+}
+.pcards li{
+    padding-bottom: 10px;
+}
+.pcards li a{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #333333;
+    
+}
+.pcards button{
+    padding: 15px 100px;
+    border: 1px solid #2563EB;
+    border-radius: 11px;
+    margin-top: 30px;
+    background: transparent;
+}
+.pcards button a{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #2563EB;
+}
+
+#procard{
+   background-color: #0D1B2A;
+}
+
+#procard h2, p {
+    color: #FFFFFF;
+}
+
+#procard h3{
+    color: #93C5FD;
+}
+
+#procard li a{
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+#procard button{
+    background: #2563EB;
+}
+
+#procard Button a{
+    color: #FFFFFF;
+}
+/* Secure Section End */
+
