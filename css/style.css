@@ -34,6 +34,23 @@ header {
     font-size: 16px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+    position: relative;
+    
+}
+
+.menu ul li a::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #2563EB;
+    bottom: -3px;
+    left: 0;
+    transition: width .4s ease;
+}
+
+.menu ul li a:hover::after{
+    width: 100%;
 }
 
 .btn button {
@@ -41,6 +58,12 @@ header {
     padding: 12px 42px;
     border-radius: 10px;
     border: none;
+    transition: .3s;
+}
+.btn button:hover{
+    box-shadow: 1px 1px 10px -3px rgba(29,78,216,0.63);
+-webkit-box-shadow: 1px 1px 10px -3px rgba(29,78,216,0.63);
+-moz-box-shadow: 1px 1px 10px -3px rgba(29,78,216,0.63);
 }
 
 .btn button a {
@@ -111,6 +134,14 @@ header {
     box-shadow: -2px 1px 7px -3px rgba(0,0,0,0.75);
 -webkit-box-shadow: -2px 1px 7px -3px rgba(0,0,0,0.75);
 -moz-box-shadow: -2px 1px 7px -3px rgba(0,0,0,0.75);
+     transition: .4s;
+}
+
+.card:hover{
+   transform: translateY(-10px);
+   box-shadow: 5px 5px 10px -3px rgba(29,78,216,0.63);
+-webkit-box-shadow: 5px 5px 10px -3px rgba(29,78,216,0.63);
+-moz-box-shadow: 5px 5px 10px -3px rgba(29,78,216,0.63);
 }
 .card img{
     width: 100%;
@@ -196,6 +227,14 @@ header {
     box-shadow: -2px 1px 7px -2px rgba(0,0,0,0.75);
 -webkit-box-shadow: -2px 1px 7px -2px rgba(0,0,0,0.75);
 -moz-box-shadow: -2px 1px 7px -2px rgba(0,0,0,0.75);
+transition: .4s;
+}
+
+.pcards:hover{
+    transform: translateY(-10px);
+    box-shadow: 1px 1px 10px 2px rgba(29,78,216,0.63);
+-webkit-box-shadow: 1px 1px 10px 2px rgba(29,78,216,0.63);
+-moz-box-shadow: 1px 1px 10px 2px rgba(29,78,216,0.63);
 }
 
 
@@ -249,6 +288,29 @@ hr{
     border-radius: 11px;
     margin-top: 30px;
     background: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.pcards button::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 0;
+    background: #2563EB;
+    top: 0;
+    left: 0;
+    transition:width .4s ease;
+    
+    z-index: -1;
+}
+
+.pcards button:hover::before{
+    width: 100%;
+}
+.pcards button:hover a{
+     color: #FFFFFF;
+     transition: .4s
 }
 .pcards button a{
     font-size: 14px;
